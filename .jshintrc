@@ -1,0 +1,19 @@
+{
+  "globals": {
+    "angular": true,
+    "$": true
+  },
+  "browser": true,
+  "devel": true,
+  "freeze": true,
+  "evil": false,
+  "camelcase": false,
+  "curly": true,
+  "immed": true,
+  "indent": true,
+  "latedef": "nofunc",
+  "undef": true,
+  "unused": true,
+  "globalstrict": false,
+  "node": true
+}
