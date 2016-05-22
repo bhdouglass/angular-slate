@@ -8,7 +8,7 @@ angular.module('angular-slate').directive('draggable', function($timeout) {
             label: '@label',
         },
         replace: true,
-        template: '<div class="item-container-content">' +
+        template: '<div class="item-container-content angular-slate">' +
             '<div class="item-draggable-list">' +
                 '<label class="item item-{{$index}}" ng-repeat="item in model" ng-bind="item[label]"></label>' +
             '</ul>' +

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="demo">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+        <meta name="author" content="Brian Douglass">
+
+        <title>Angular Slate</title>
+
+        <link rel="stylesheet" href="/bower_components/Slate/dist/css/slate.min.css" />
+        <link rel="stylesheet" href="/dist/css/angular-slate.min.css" />
+
+        <script src="/bower_components/angular/angular.min.js"></script>
+        <script src="/bower_components/Slate/dist/js/slate.min.js"></script>
+        <script src="/dist/js/angular-slate.min.js"></script>
+        <script src="/demo.js"></script>
+
+        <style>
+            .header {
+                background-color: #333333;
+            }
+        </style>
+    </head>
+
+    <body ng-controller="indexCtrl">
+        <div class="item-container-header header">
+            <h2>Angular Slate</h2>
+        </div>
+
+        <div class="ng-cloak">
+            <div class="item-container clear-fix">
+                <div class="item-container-header">Components</div>
+
+                <div class="item-container-content">
+                    <label class="item">
+                        Color Picker (Aplite)
+                        <color-picker ng-model="config.color_aplite" platform="aplite"></color-picker>
+                    </label>
+                </div>
+
+                <div class="item-container-content">
+                    <label class="item">
+                        Color Picker (Basalt &amp; Chalk)
+                        <color-picker ng-model="config.color_basalt" platform="basalt"></color-picker>
+                    </label>
+                </div>
+
+                <div class="item-container-content">
+                    <label class="item">
+                        Dynamic List
+                        <list ng-model="dynamic_list"></list>
+                    </label>
+                </div>
+
+                <div class="item-container-content">
+                    <label class="item">
+                        Draggable List
+                        <draggable ng-model="draggable_list" label="label"></draggable>
+                    </label>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

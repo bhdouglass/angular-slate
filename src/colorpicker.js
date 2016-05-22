@@ -305,7 +305,7 @@ angular.module('angular-slate').directive('colorPicker', function() {
         scope: {},
         replace: true,
         require: 'ngModel',
-        template: '<span>' +
+        template: '<span class="angular-slate">' +
             '<span ng-if="platform == \'aplite\'">' +
                 '<span class="color" ng-style="style(model)"></span>' +
                 '<select class="item-select" ng-model="model" ng-options="c.name for c in colors" ng-change="setModel(model)"></select>' +

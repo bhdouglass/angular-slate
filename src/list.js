@@ -7,7 +7,7 @@ angular.module('angular-slate').directive('list', function() {
             model: '=ngModel',
         },
         replace: true,
-        template: '<div class="item-container-content">' +
+        template: '<div class="item-container-content angular-slate">' +
             '<div class="item-dyn-list">' +
                 '<label class="item" ng-repeat="item in model">' +
                     '{{item}}' +

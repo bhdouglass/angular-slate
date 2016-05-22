@@ -325,7 +325,7 @@ angular.module('angular-slate').directive('colorPicker', function() {
         scope: {},
         replace: true,
         require: 'ngModel',
-        template: '<span>' +
+        template: '<span class="angular-slate">' +
             '<span ng-if="platform == \'aplite\'">' +
                 '<span class="color" ng-style="style(model)"></span>' +
                 '<select class="item-select" ng-model="model" ng-options="c.name for c in colors" ng-change="setModel(model)"></select>' +
@@ -424,7 +424,7 @@ angular.module('angular-slate').directive('draggable', ["$timeout", function($ti
             label: '@label',
         },
         replace: true,
-        template: '<div class="item-container-content">' +
+        template: '<div class="item-container-content angular-slate">' +
             '<div class="item-draggable-list">' +
                 '<label class="item item-{{$index}}" ng-repeat="item in model" ng-bind="item[label]"></label>' +
             '</ul>' +
@@ -475,7 +475,7 @@ angular.module('angular-slate').directive('list', function() {
             model: '=ngModel',
         },
         replace: true,
-        template: '<div class="item-container-content">' +
+        template: '<div class="item-container-content angular-slate">' +
             '<div class="item-dyn-list">' +
                 '<label class="item" ng-repeat="item in model">' +
                     '{{item}}' +
