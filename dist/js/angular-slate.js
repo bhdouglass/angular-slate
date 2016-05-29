@@ -516,7 +516,7 @@ angular.module('angular-slate').directive('kiezelpay', ["$http", function($http)
                     $http.get(url).then(function(res) {
                         $scope.status = res.data.status;
                         if ($scope.status == 'trial' && res.data.trialDurationInSeconds) {
-                            var trial_hours = Math.ceil(res.data.trialDurationInSeconds);
+                            var trial_hours = Math.ceil(res.data.trialDurationInSeconds / 3600);
                             $scope.trial_hours = trial_hours ? trial_hours : 1;
                         }
                         else {
