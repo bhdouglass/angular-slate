@@ -65,6 +65,30 @@ and add `angular-slate` to your angular app's dependencies.
 - `trial-message` is an optional message to show when the user is in the trial period
 - The classes `licensed`, `unlicensed`, and `trial` will be applied to the directive to allow you to style as needed
 
+## Master Key
+
+```
+<master-key
+    ng-model="master_key_data"
+    logged-in="master_key_logged_in"
+    title="{{optional message}}"
+    email-placeholder="{{optional message}}"
+    pin-placeholder="{{optional message}}"
+    fetch-button="{{optional message}}"
+    logged-in-text="{{optional message}}"
+    fetch-again-button="{{optional message}}"
+></master-key>
+```
+
+- `ng-model` will hold the Master Key keys received from the server
+- `logged-in` this can be set to true when you already have the keys
+- `title` is an optional message to show instead of "Master Key"
+- `email-placeholder` is an optional message to show instead of "Master Key Email"
+- `pin-placeholder` is an optional message to show instead of "Master Key Pin"
+- `fetch-button` is an optional message to show instead of "Fetch Keys"
+- `logged-in-text` is an optional message to show instead of "Your Master Key data has been saved."
+- `fetch-again-button` is an optional message to show instead of "Fetch Keys Again"
+
 ## License
 
 Copyright (C) 2016 [Brian Douglass](http://bhdouglass.com/)

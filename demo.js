@@ -37,4 +37,11 @@ angular.module('demo').controller('indexCtrl', function($scope) {
     $scope.$watch('draggable_list', function() {
         console.log('draggable_list updated', $scope.draggable_list);
     }, true);
+
+    $scope.master_key_logged_in = false;
+    $scope.master_key = {};
+
+    $scope.$watch('master_key', function() {
+        console.log('master_key updated', $scope.master_key);
+    }, true);
 });
