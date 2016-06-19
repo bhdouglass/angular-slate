@@ -618,7 +618,7 @@ angular.module('angular-slate').directive('masterKey', ["$http", function($http)
 
             $scope.logout = function() {
                 $scope.logged_in = false;
-            }
+            };
 
             $scope.fetch = function() {
                 $http.get('https://pmkey.xyz/search/?email=' + $scope.master_key.email + '&pin=' + $scope.master_key.pin).then(function(res) {
